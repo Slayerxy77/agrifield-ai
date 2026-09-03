@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --forest-deep: #081C15;
+    --forest-dark: #1B4332;
+    --forest-mid: #2D6A4F;
+    --forest-emerald: #40916C;
+    --forest-light: #52B788;
+    --forest-mint: #74C69D;
+    --lime-tech: #B9FBC0;
+    --amber-glow: #FFB703;
+    --soil-brown: #7F5539;
+  }
+
+  body {
+    background-color: #081C15;
+    color: #E8F5E9;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+/* Glassmorphism Utilities */
+.glass-panel {
+  background: rgba(27, 67, 50, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(185, 251, 192, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-panel-hover:hover {
+  background: rgba(45, 106, 79, 0.55);
+  border-color: rgba(185, 251, 192, 0.35);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px 0 rgba(64, 145, 108, 0.25);
+}
+
+.glass-card-accent {
+  background: linear-gradient(135deg, rgba(27, 67, 50, 0.6), rgba(8, 28, 21, 0.8));
+  border: 1px solid rgba(185, 251, 192, 0.2);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+/* Glowing text and borders */
+.text-glow-lime {
+  text-shadow: 0 0 16px rgba(185, 251, 192, 0.5);
+}
+
+.text-glow-amber {
+  text-shadow: 0 0 16px rgba(255, 183, 3, 0.5);
+}
+
+.border-glow-lime {
+  box-shadow: 0 0 15px rgba(185, 251, 192, 0.25);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #081C15;
+}
+::-webkit-scrollbar-thumb {
+  background: #2D6A4F;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #40916C;
+}
+
+/* Pulse Laser Grid Animation */
+@keyframes laserSweep {
+  0% {
+    top: 0%;
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    top: 100%;
+    opacity: 0.2;
+  }
+}
+
+.animate-laser {
+  animation: laserSweep 2s ease-in-out infinite alternate;
+}
+
+/* Floating Animation */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1deg); }
+}
+
+.animate-float {
+  animation: floatSlow 5s ease-in-out infinite;
+}
