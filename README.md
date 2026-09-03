@@ -1,16 +1,19 @@
-# React + Vite
+# Agrifield.ai (AgriShield AI) 🌿
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+AI-Driven Smart Agriculture & Crop Health Ecosystem with an integrated **File Manager & AI File Generator**.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **3D Crop Ecosystem**: Interactive WebGL 3D terrain canvas and sensor node map.
+- **AI File Manager & Compiler**: Generate, preview, analyze, and download agricultural reports (`.json`, `.csv`, `.txt`).
+  - Soil Health & Micro-Nutrients Analysis
+  - Crop Disease & Pathogen Diagnostic Logs
+  - Smart Irrigation & Moisture Matrix
+  - Multispectral Drone Canopy Scans
+  - 7-Day AI Master Farm Action Plans
+- **Local Storage & Export Engine**: Persistent file state and 1-click device download.
 
-## React Compiler
+## Live Deployment
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- Hosted on **Vercel**: High-performance global CDN deployment.
+- Framework: **Vite + React 19 + TailwindCSS + Three.js**.
